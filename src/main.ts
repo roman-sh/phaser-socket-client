@@ -48,7 +48,7 @@ function preload(this: Scene) {
 
 
 function create(this: Scene) {
-	this.socket = io('ws://161.35.192.46:3000')
+	this.socket = io('wss://161.35.192.46:3000')
 	this.otherPlayers = this.physics.add.group()
 
 	this.socket.on('currentPlayers', players => {
