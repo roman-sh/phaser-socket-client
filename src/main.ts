@@ -48,7 +48,7 @@ function preload(this: Scene) {
 
 
 function create(this: Scene) {
-	this.socket = io('wss://phaser-socket-server-dev-xfse.2.ie-1.fl0.io:3000')
+	this.socket = io('wss://phaser-socket-server-dev-xfse.2.ie-1.fl0.io')
 	this.otherPlayers = this.physics.add.group()
 
 	this.socket.on('currentPlayers', players => {
